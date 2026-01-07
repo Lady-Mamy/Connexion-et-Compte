@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREER COMPTE</title>
+</head>
+<style>
+    section {
+        width: 60%;
+        border: 1px solid;
+        margin-left: 20%;
+        border-radius: 4px;
+    }
+
+    .h4 {
+        background-color: lightgrey;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 1px;
+    }
+
+    form {
+        width: 95%;
+        margin: 2.5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 1%;
+        border: 1px solid;
+        border-radius: 4px;
+    }
+
+    .ligne input,
+    .ligne select {
+        width: 50%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .cl {
+        background-color: lightgray;
+    }
+
+    .cl input {
+        width: 70%;
+        height: 80%;
+    }
+
+    .infos {
+        color: rgb(185, 13, 13);
+    }
+    .Régénérer {
+         background-color: rgb(92, 165, 210);
+            border-color: rgb(145, 213, 234);
+            color: white;
+             margin-left: 70%;
+            margin-top: 5%;
+    }
+    .Valider {
+        background-color: rgb(19, 147, 19);
+        border-color: rgb(19, 147, 19);
+        margin-left: 40%;
+        margin-bottom: 2%;
+
+    }
+    .Annuler {
+        background-color: rgb(240, 36, 36);
+        border-color:rgb(240, 36, 36) ;
+        margin-left: 1%;
+        margin-bottom: 2%;
+    }
+</style>
+
+<body>
+    <section>
+        <div class="h4">
+            <h4>création de votre compte d'accés</h4>
+        </div>
+        <ul>
+            <div class="infos">
+                <li>Tous les champs sont obligatoires</li>
+                <li>mot de passe doit contenir 8 caractères minimum avec un mélange de chiffre et de lettres</li>
+            </div>
+        </ul>
+        <form>
+            <div class="ligne"><label for="Type d'identifiant">Type d'identifiant :</label>
+                <select>
+                    <option disabled>selectionner le type d'identifiant</option>
+                    <option>Numéro carte étudiant</option>
+                    <option>Numéro table</option>
+                    <option>CNI/Passport</option>
+                    <option>INE</option>
+                </select>
+            </div>
+            <div class="cl" class="ligne"><label for="Votre identifiant : ">Votre identifiant :</label>
+                <input type="text" name="Votre identifiant" id="votre identifiant" placeholder="votre identifiant">
+            </div>
+            <div class="ligne"><label for="Nom : ">Nom :</label>
+                <input type="text" name="Nom" id="Nom" placeholder="Nom de famille">
+            </div>
+            <div class="cl" class="ligne"><label for="Prénom : ">Prénom :</label>
+                <input type="text" name="Prénom" id="Prénom" placeholder="Prénom">
+            </div>
+            <div class="ligne"><label class="ligne" for="Mot de passe : ">Mot de passe :</label>
+                <input type="password" name="Mot de passe" id="Mot de passe" placeholder="Mot de passe">
+            </div>
+            <div class="cl" class="ligne"><label for="Confirmation du mot de passe  : ">Confirmation du mot de passe
+                    :</label>
+                <input type="password" name="Mot de passe" id="confmdp" placeholder="confirmer votre mot de passe">
+            </div>
+            <div class="ligne"><label for="Email personnel : ">Email personnel :</label>
+                <input type="email" name="email" id="email" placeholder="Email personnel">
+            </div>
+            <div class="cl" class="ligne"><label for="Capchat : ">Capchat :</label>
+                <input type="text" name="Capchat" id="Capchat" placeholder="saisissez les caractères ci-dessous">
+            </div>
+            <div><button class="Régénérer" type="submit">Régénérer</button></div>
+        </form>
+        <div><button class="Valider" type="submit">Valider</button><button class="Annuler" type="reset">Annuler</button></div>
+    </section>
+
+</body>
+
+</html>
